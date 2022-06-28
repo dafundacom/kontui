@@ -1,11 +1,11 @@
 ## Installation
 
 ```sh
-yarn add @kontui/react
+npm i @kontui/react
 ```
 
 ```sh
-yarn add @kontui/react
+pnpm add @kontui/react
 ```
 
 ```sh
