@@ -1,27 +1,31 @@
-name: Checks
+name: Test
 
-on: [push, pull_request]
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
 
 jobs:
-  checks:
-    name: Linting
+  build:
     runs-on: ubuntu-latest
+
     strategy:
       matrix:
         node-version: [14.x, 16.x]
+
     steps:
       - uses: actions/checkout@v3
-      - uses: pnpm/action-setup@v2.0.1
-        name: Install pnpm
-        id: pnpm-install
-        with:
-          version: 7
+      - name: Install pnpm
+        uses: pnpm/action-setup@v2
       - name: Set node ${{ matrix.node-version }}
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
           cache: pnpm
       - name: Install dependencies
-        run: pnpm install --frozen-lockfile
+        run: pnpm install --frozen-lockfile && pnpm bootstrap
       - name: Lint code
         run: pnpm lint
+      - name: Build package
+        run: pnpm build
