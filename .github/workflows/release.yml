@@ -13,28 +13,19 @@ jobs:
     name: Release
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-      - uses: pnpm/action-setup@v2.0.1
-        name: Install pnpm
-        id: pnpm-install
-        with:
-          version: 7
+      - uses: actions/checkout@v3
+      - name: Install pnpm
+        uses: pnpm/action-setup@v2
       - name: Set node ${{ matrix.node-version }}
         uses: actions/setup-node@v3
         with:
-          registry-url: https://registry.npmjs.org/
           node-version: ${{ matrix.node-version }}
           cache: pnpm
-      - run: pnpm install --frozen-lockfile
-      - name: Configure npm
-        run: |
-          cat << EOF > "$HOME/.npmrc"
-            //registry.npmjs.org/:_authToken=$NPM_TOKEN
-          EOF
-        env:
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-      - name: Build packages
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile && pnpm bootstrap
+      - name: Lint code
+        run: pnpm lint
+      - name: Build package
         run: pnpm build
       - name: Setup git user (for changelog step)
         run: |
