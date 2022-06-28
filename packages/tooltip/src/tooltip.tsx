@@ -6,7 +6,11 @@ import { TooltipContent } from "./tooltip-content"
 import { getRect } from "./utils"
 
 import type { DefaultProps, ScaleProps } from "@kontui/theme"
-import type { TriggerTypes, Placement, SnippetTypes } from "@kontui/utils"
+import type {
+  TriggerColorScheme,
+  Placement,
+  SnippetColorScheme,
+} from "@kontui/utils"
 import type { TooltipIconOffset } from "./tooltip-content"
 
 type TooltipOnVisibleChange = (visible: boolean) => void
@@ -16,12 +20,12 @@ interface TooltipProps
     ScaleProps,
     React.HTMLAttributes<HTMLDivElement> {
   text: string | React.ReactNode
-  colorScheme?: SnippetTypes
+  colorScheme?: SnippetColorScheme
   placement?: Placement
   visible?: boolean
   initialVisible?: boolean
   hideArrow?: boolean
-  trigger?: TriggerTypes
+  trigger?: TriggerColorScheme
   enterDelay?: number
   leaveDelay?: number
   offset?: number

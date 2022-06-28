@@ -6,7 +6,7 @@ import { __DEV__ } from "@kontui/utils"
 import { TextChild } from "./text-child"
 
 import type { DefaultProps, ScaleProps } from "@kontui/theme"
-import type { NormalTypes } from "@kontui/utils"
+import type { BaseColorScheme } from "@kontui/utils"
 
 interface TextProps
   extends DefaultProps,
@@ -27,7 +27,7 @@ interface TextProps
   em?: boolean
   blockquote?: boolean
   className?: string
-  colorScheme?: NormalTypes
+  colorScheme?: BaseColorScheme
 }
 
 type ElementMap = { [key in keyof JSX.IntrinsicElements]?: boolean }

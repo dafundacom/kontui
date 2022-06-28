@@ -3,29 +3,25 @@ import * as React from "react"
 import { useTheme, useScale, withScale } from "@kontui/theme"
 import { useClasses, __DEV__ } from "@kontui/utils"
 
-import type {
-  DefaultProps,
-  KontUIThemesPalette,
-  ScaleProps,
-} from "@kontui/theme"
+import type { DefaultProps, BaseThemePalette, ScaleProps } from "@kontui/theme"
 
-import type { NormalTypes } from "@kontui/utils"
+import type { BaseColorScheme } from "@kontui/utils"
 
 interface LoadingProps
   extends DefaultProps,
     ScaleProps,
     React.HTMLAttributes<HTMLDivElement> {
-  colorScheme?: NormalTypes
+  colorScheme?: BaseColorScheme
   color?: string
   spaceRatio?: number
 }
 
 const getLoadingIconBgColor = (
-  colorScheme: NormalTypes,
-  palette: KontUIThemesPalette,
+  colorScheme: BaseColorScheme,
+  palette: BaseThemePalette,
   color?: string,
 ) => {
-  const colors: { [key in NormalTypes]: string } = {
+  const colors: { [key in BaseColorScheme]: string } = {
     default: palette.accents_6,
     secondary: palette.secondary,
     success: palette.success,

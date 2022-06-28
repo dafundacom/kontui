@@ -15,13 +15,13 @@ import { ButtonDropdownIcon } from "./button-dropdown-icon"
 import { getButtonDropdownColors } from "./styles"
 
 import type { DefaultProps, ScaleProps } from "@kontui/theme"
-import type { NormalTypes } from "@kontui/utils"
+import type { BaseColorScheme } from "@kontui/utils"
 
 interface ButtonDropdownProps
   extends DefaultProps,
     ScaleProps,
     React.HTMLAttributes<HTMLDivElement> {
-  colorScheme?: NormalTypes
+  colorScheme?: BaseColorScheme
   auto?: boolean
   loading?: boolean
   disabled?: boolean

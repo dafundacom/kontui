@@ -1,15 +1,10 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import * as React from "react"
 import { useTheme, useScale, withScale } from "@kontui/theme"
-import { useClasses, __DEV__ } from "@kontui/utils"
+import { ButtonColorScheme, useClasses, __DEV__ } from "@kontui/utils"
 import { ButtonGroupContext, ButtonGroupConfig } from "./button-group-context"
 
-import type {
-  DefaultProps,
-  ScaleProps,
-  KontUIThemesPalette,
-} from "@kontui/theme"
-import { ButtonColorScheme } from "./styles"
+import type { DefaultProps, ScaleProps, BaseThemePalette } from "@kontui/theme"
 
 interface ButtonGroupProps
   extends DefaultProps,
@@ -23,7 +18,7 @@ interface ButtonGroupProps
 }
 
 const getGroupBorderColors = (
-  palette: KontUIThemesPalette,
+  palette: BaseThemePalette,
   props: ButtonGroupProps,
 ): string => {
   const { ghost = false, colorScheme = "default" } = props

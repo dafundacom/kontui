@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-unused-expressions */
 import * as React from "react"
 import { useTheme, useScale, withScale } from "@kontui/theme"
-import { useClasses, __DEV__ } from "@kontui/utils"
+import { ButtonColorScheme, useClasses, __DEV__ } from "@kontui/utils"
 
 import { ButtonDrip } from "./button-drip"
 import { ButtonLoading } from "./button-loading"
@@ -16,7 +16,6 @@ import {
 } from "./styles"
 
 import type { DefaultProps, ScaleProps } from "@kontui/theme"
-import type { ButtonColorScheme } from "./styles"
 
 interface ButtonProps
   extends DefaultProps,

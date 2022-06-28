@@ -1,6 +1,5 @@
 import * as React from "react"
-
-import { ButtonColorScheme } from "./styles"
+import { ButtonColorScheme } from "@kontui/utils"
 
 interface ButtonGroupConfig {
   colorScheme?: ButtonColorScheme

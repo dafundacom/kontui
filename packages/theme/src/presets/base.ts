@@ -1,17 +1,13 @@
-import {
-  KontUIThemesBreakpoints,
-  KontUIThemesFont,
-  KontUIThemesLayout,
-} from "./types"
+import { BaseThemeBreakpoints, BaseThemeFont, BaseThemeLayout } from "./types"
 
-export const defaultFont: KontUIThemesFont = {
+export const defaultFont: BaseThemeFont = {
   sans: '"Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif',
   mono: "Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace",
   prism:
     'ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,"Liberation Mono", "Courier New", monospace',
 }
 
-export const defaultBreakpoints: KontUIThemesBreakpoints = {
+export const defaultBreakpoints: BaseThemeBreakpoints = {
   xs: {
     min: "0",
     max: "650px",
@@ -34,7 +30,7 @@ export const defaultBreakpoints: KontUIThemesBreakpoints = {
   },
 }
 
-export const defaultLayout: KontUIThemesLayout = {
+export const defaultLayout: BaseThemeLayout = {
   gap: "16pt",
   gapNegative: "-16pt",
   gapHalf: "8pt",

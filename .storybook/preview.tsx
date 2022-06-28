@@ -1,12 +1,12 @@
 import { withPerformance } from "storybook-addon-performance"
 
-import { ThemeProvider, CssBaseline } from "../packages/theme"
+import { ThemeProvider, CssBase } from "../packages/theme"
 
 const withKontui = (StoryFn: Function) => {
   return (
     <>
       <ThemeProvider>
-        <CssBaseline />
+        <CssBase />
         <div
           id="story-wrapper"
           style={{

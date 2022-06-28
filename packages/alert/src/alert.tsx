@@ -3,10 +3,10 @@ import * as React from "react"
 import { useScale, useTheme, withScale } from "@kontui/theme"
 import { useClasses, __DEV__ } from "@kontui/utils"
 
-import type { DefaultProps, KontUIThemes, ScaleProps } from "@kontui/theme"
-import type { NormalTypes } from "@kontui/utils"
+import type { DefaultProps, BaseTheme, ScaleProps } from "@kontui/theme"
+import type { BaseColorScheme } from "@kontui/utils"
 
-type AlertColorSchemeTypes = NormalTypes
+type AlertColorSchemeTypes = BaseColorScheme
 
 interface AlertProps
   extends DefaultProps,
@@ -21,7 +21,7 @@ interface AlertProps
 const getStatusColor = (
   type: AlertColorSchemeTypes,
   filled: boolean,
-  theme: KontUIThemes,
+  theme: BaseTheme,
 ) => {
   const colors: { [key in AlertColorSchemeTypes]?: string } = {
     secondary: theme.palette.secondary,

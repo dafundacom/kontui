@@ -9,12 +9,8 @@ import { InputBlockLabel } from "./input-block-label"
 import { InputIcon } from "./input-icon"
 import { InputIconClear } from "./input-icon-clear"
 
-import type {
-  DefaultProps,
-  KontUIThemesPalette,
-  ScaleProps,
-} from "@kontui/theme"
-import type { NormalTypes } from "@kontui/utils"
+import type { DefaultProps, BaseThemePalette, ScaleProps } from "@kontui/theme"
+import type { BaseColorScheme } from "@kontui/utils"
 
 type InputColor = {
   color: string
@@ -23,10 +19,10 @@ type InputColor = {
 }
 
 const getInputColors = (
-  palette: KontUIThemesPalette,
-  status?: NormalTypes,
+  palette: BaseThemePalette,
+  status?: BaseColorScheme,
 ): InputColor => {
-  const colors: { [key in NormalTypes]: InputColor } = {
+  const colors: { [key in BaseColorScheme]: InputColor } = {
     default: {
       color: palette.foreground,
       borderColor: palette.border,
@@ -66,7 +62,7 @@ interface InputProps
   value?: string
   initialValue?: string
   placeholder?: string
-  colorScheme?: NormalTypes
+  colorScheme?: BaseColorScheme
   type?: string
   readOnly?: boolean
   disabled?: boolean

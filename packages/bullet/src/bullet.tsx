@@ -3,8 +3,8 @@ import * as React from "react"
 import { useTheme, useScale, withScale } from "@kontui/theme"
 import { useClasses, __DEV__ } from "@kontui/utils"
 
-import type { DefaultProps, KontUIThemes } from "@kontui/theme"
-import type { NormalTypes } from "@kontui/utils"
+import type { DefaultProps, BaseTheme } from "@kontui/theme"
+import type { BaseColorScheme } from "@kontui/utils"
 
 interface BulletProps
   extends DefaultProps,
@@ -12,11 +12,11 @@ interface BulletProps
   /* as element */
   as?: React.ElementType
   /* Controls bullet appearance */
-  colorScheme?: NormalTypes
+  colorScheme?: BaseColorScheme
 }
 
-const getColor = (colorScheme: NormalTypes, theme: KontUIThemes): string => {
-  const colors: { [key in NormalTypes]?: string } = {
+const getColor = (colorScheme: BaseColorScheme, theme: BaseTheme): string => {
+  const colors: { [key in BaseColorScheme]?: string } = {
     default: theme.palette.accents_2,
     success: theme.palette.success,
     warning: theme.palette.warning,

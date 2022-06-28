@@ -5,11 +5,11 @@ import { Themes } from "./themes"
 import { ThemeContext, AllThemesContext } from "./theme-context"
 
 import type { AllThemesConfig } from "./theme-context"
-import type { KontUIThemes } from "./presets/types"
+import type { BaseTheme } from "./presets/types"
 
 export interface ThemeProviderProps {
   themeType?: string
-  themes?: Array<KontUIThemes>
+  themes?: Array<BaseTheme>
   children: React.ReactNode
 }
 
@@ -20,7 +20,7 @@ const ThemeProvider: React.FC<ThemeProviderProps> = (props) => {
     themes: Themes.getPresets(),
   })
 
-  const currentTheme = React.useMemo<KontUIThemes>(() => {
+  const currentTheme = React.useMemo<BaseTheme>(() => {
     const theme = allThemes.themes.find((item) => item.type === themeType)
     if (theme) return theme
     return Themes.getPresetStaticTheme()

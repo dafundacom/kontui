@@ -15,12 +15,8 @@ import { getPosition, defaultTooltipPosition } from "./tooltip-placement"
 import { TooltipIcon } from "./tooltip-icon"
 import { getRect } from "./utils"
 
-import type {
-  DefaultProps,
-  ScaleProps,
-  KontUIThemesPalette,
-} from "@kontui/theme"
-import type { Placement, SnippetTypes } from "@kontui/utils"
+import type { DefaultProps, ScaleProps, BaseThemePalette } from "@kontui/theme"
+import type { Placement, SnippetColorScheme } from "@kontui/utils"
 import type { TooltipPosition } from "./tooltip-placement"
 
 type TooltipColors = {
@@ -29,10 +25,10 @@ type TooltipColors = {
 }
 
 const getTooltipColors = (
-  colorScheme: SnippetTypes,
-  palette: KontUIThemesPalette,
+  colorScheme: SnippetColorScheme,
+  palette: BaseThemePalette,
 ): TooltipColors => {
-  const colors: { [key in SnippetTypes]: string } = {
+  const colors: { [key in SnippetColorScheme]: string } = {
     default: palette.background,
     success: palette.success,
     warning: palette.warning,
@@ -58,7 +54,7 @@ interface TooltipContentProps
     React.HTMLAttributes<HTMLElement> {
   parent?: React.MutableRefObject<HTMLElement | null> | undefined
   placement: Placement
-  colorScheme: SnippetTypes
+  colorScheme: SnippetColorScheme
   visible: boolean
   hideArrow: boolean
   offset: number

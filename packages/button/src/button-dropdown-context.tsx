@@ -1,16 +1,16 @@
 import * as React from "react"
 
-import type { NormalTypes } from "@kontui/utils"
+import type { BaseColorScheme } from "@kontui/utils"
 
 interface ButtonDropdownConfig {
-  colorScheme?: NormalTypes
+  colorScheme?: BaseColorScheme
   auto?: boolean
   disabled?: boolean
   loading?: boolean
 }
 
 const defaultContext = {
-  colorScheme: "default" as NormalTypes,
+  colorScheme: "default" as BaseColorScheme,
   auto: false,
   disabled: false,
   loading: false,

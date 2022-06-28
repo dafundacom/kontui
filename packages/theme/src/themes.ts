@@ -1,10 +1,10 @@
-import { KontUIThemes } from "./presets/types"
+import { BaseTheme } from "./presets/types"
 import lightTheme from "./presets/default"
 import darkTheme from "./presets/dark"
 
 import type { DeepPartial } from "@kontui/utils"
 
-type KontUserTheme = DeepPartial<KontUIThemes> & { type: string }
+type CustomTheme = DeepPartial<BaseTheme> & { type: string }
 
 const isObject = (target: unknown) => target && typeof target === "object"
 
@@ -35,11 +35,11 @@ const deepDuplicable = <T extends Record<string, unknown>>(
   return result
 }
 
-const getPresets = (): Array<KontUIThemes> => {
+const getPresets = (): Array<BaseTheme> => {
   return [lightTheme, darkTheme]
 }
 
-const getPresetStaticTheme = (): KontUIThemes => {
+const getPresetStaticTheme = (): BaseTheme => {
   return lightTheme
 }
 
@@ -51,7 +51,7 @@ const isAvailableThemeType = (type?: string): boolean => {
 }
 
 const isPresetTheme = (
-  themeOrType?: KontUserTheme | KontUIThemes | string,
+  themeOrType?: CustomTheme | BaseTheme | string,
 ): boolean => {
   if (!themeOrType) return false
   const isType = typeof themeOrType === "string"
@@ -61,20 +61,20 @@ const isPresetTheme = (
   return !isAvailableThemeType(type)
 }
 
-const hasUserCustomTheme = (themes: Array<KontUIThemes> = []): boolean => {
+const hasUserCustomTheme = (themes: Array<BaseTheme> = []): boolean => {
   return !!themes.find((item) => isAvailableThemeType(item.type))
 }
 
-const create = (base: KontUIThemes, custom: KontUserTheme): KontUIThemes => {
+const create = (base: BaseTheme, custom: CustomTheme): BaseTheme => {
   if (!isAvailableThemeType(custom.type)) {
     throw new Error("Duplicate or unavailable theme type")
   }
 
-  return deepDuplicable(base, custom) as KontUIThemes
+  return deepDuplicable(base, custom) as BaseTheme
 }
 
-const createFromDark = (custom: KontUserTheme) => create(darkTheme, custom)
-const createFromLight = (custom: KontUserTheme) => create(lightTheme, custom)
+const createFromDark = (custom: CustomTheme) => create(darkTheme, custom)
+const createFromLight = (custom: CustomTheme) => create(lightTheme, custom)
 
 const Themes = {
   isPresetTheme,
@@ -87,5 +87,5 @@ const Themes = {
   createFromLight,
 }
 
-export type { KontUserTheme }
+export type { CustomTheme }
 export { isObject, deepDuplicable, Themes }

@@ -9,7 +9,7 @@ function SSRStyles() {
   return <>{styles}</>
 }
 
-const CssBaselineStyle: React.FunctionComponent<
+const CssBaseStyle: React.FunctionComponent<
   React.PropsWithChildren<unknown>
 > = ({ children }) => {
   const theme = useTheme()
@@ -310,13 +310,13 @@ const CssBaselineStyle: React.FunctionComponent<
   )
 }
 
-type CssBaselineComponent<P = {}> = React.NamedExoticComponent<P> & {
+type CssBaseComponent<P = {}> = React.NamedExoticComponent<P> & {
   flush: React.FunctionComponent
 }
 
-const CssBaseline = React.memo(CssBaselineStyle) as CssBaselineComponent<
+const CssBase = React.memo(CssBaseStyle) as CssBaseComponent<
   React.PropsWithChildren<unknown>
 >
-CssBaseline.flush = SSRStyles
+CssBase.flush = SSRStyles
 
-export { CssBaseline }
+export { CssBase }

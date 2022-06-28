@@ -1,18 +1,17 @@
 import * as React from "react"
 
 import { Themes } from "./themes"
-import { KontUIThemes } from "./presets/types"
+import { BaseTheme } from "./presets/types"
 
 const defaultTheme = Themes.getPresetStaticTheme()
 
-const ThemeContext: React.Context<KontUIThemes> =
-  React.createContext<KontUIThemes>(defaultTheme)
-const useTheme = (): KontUIThemes =>
-  React.useContext<KontUIThemes>(ThemeContext)
+const ThemeContext: React.Context<BaseTheme> =
+  React.createContext<BaseTheme>(defaultTheme)
+const useTheme = (): BaseTheme => React.useContext<BaseTheme>(ThemeContext)
 
 /* All Themes */
 type AllThemesConfig = {
-  themes: Array<KontUIThemes>
+  themes: Array<BaseTheme>
 }
 
 const defaultAllThemesConfig = {
