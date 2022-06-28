@@ -148,9 +148,9 @@ importers:
 
   packages/accordion:
     specifiers:
-      '@kontui/layout': 0.0.1
-      '@kontui/theme': 0.0.1
-      '@kontui/utils': ^0.0.1
+      '@kontui/layout': 0.1.0
+      '@kontui/theme': 0.1.0
+      '@kontui/utils': ^0.1.0
       react: 18.2.0
       styled-jsx: ^5.0.2
     dependencies:
@@ -163,8 +163,8 @@ importers:
 
   packages/alert:
     specifiers:
-      '@kontui/theme': 0.0.1
-      '@kontui/utils': ^0.0.1
+      '@kontui/theme': 0.1.0
+      '@kontui/utils': ^0.1.0
       react: 18.2.0
       styled-jsx: ^5.0.2
     dependencies:
@@ -176,8 +176,8 @@ importers:
 
   packages/avatar:
     specifiers:
-      '@kontui/theme': 0.0.1
-      '@kontui/utils': ^0.0.1
+      '@kontui/theme': 0.1.0
+      '@kontui/utils': ^0.1.0
       react: 18.2.0
       styled-jsx: ^5.0.2
     dependencies:
@@ -189,8 +189,8 @@ importers:
 
   packages/badge:
     specifiers:
-      '@kontui/theme': 0.0.1
-      '@kontui/utils': ^0.0.1
+      '@kontui/theme': 0.1.0
+      '@kontui/utils': ^0.1.0
       react: 18.2.0
       styled-jsx: ^5.0.2
     dependencies:
@@ -202,9 +202,9 @@ importers:
 
   packages/box:
     specifiers:
-      '@kontui/image': 0.0.1
-      '@kontui/theme': 0.0.1
-      '@kontui/utils': ^0.0.1
+      '@kontui/image': 0.1.0
+      '@kontui/theme': 0.1.0
+      '@kontui/utils': ^0.1.0
       react: 18.2.0
       styled-jsx: ^5.0.2
     dependencies:
@@ -217,9 +217,9 @@ importers:
 
   packages/breadcrumb:
     specifiers:
-      '@kontui/link': 0.0.1
-      '@kontui/theme': 0.0.1
-      '@kontui/utils': ^0.0.1
+      '@kontui/link': 0.1.0
+      '@kontui/theme': 0.1.0
+      '@kontui/utils': ^0.1.0
       react: 18.2.0
       styled-jsx: ^5.0.2
     dependencies:
@@ -232,8 +232,8 @@ importers:
 
   packages/bullet:
     specifiers:
-      '@kontui/theme': 0.0.1
-      '@kontui/utils': ^0.0.1
+      '@kontui/theme': 0.1.0
+      '@kontui/utils': ^0.1.0
       react: 18.2.0
       styled-jsx: ^5.0.2
     dependencies:
@@ -245,9 +245,9 @@ importers:
 
   packages/button:
     specifiers:
-      '@kontui/loading': 0.0.1
-      '@kontui/theme': 0.0.1
-      '@kontui/utils': ^0.0.1
+      '@kontui/loading': 0.1.0
+      '@kontui/theme': 0.1.0
+      '@kontui/utils': ^0.1.0
       react: 18.2.0
       styled-jsx: ^5.0.2
     dependencies:
@@ -260,8 +260,8 @@ importers:
 
   packages/checkbox:
     specifiers:
-      '@kontui/theme': 0.0.1
-      '@kontui/utils': ^0.0.1
+      '@kontui/theme': 0.1.0
+      '@kontui/utils': ^0.1.0
       react: 18.2.0
       styled-jsx: ^5.0.2
     dependencies:
@@ -273,8 +273,8 @@ importers:
 
   packages/code:
     specifiers:
-      '@kontui/theme': 0.0.1
-      '@kontui/utils': ^0.0.1
+      '@kontui/theme': 0.1.0
+      '@kontui/utils': ^0.1.0
       react: 18.2.0
       styled-jsx: ^5.0.2
     dependencies:
@@ -286,8 +286,8 @@ importers:
 
   packages/image:
     specifiers:
-      '@kontui/theme': 0.0.1
-      '@kontui/utils': ^0.0.1
+      '@kontui/theme': 0.1.0
+      '@kontui/utils': ^0.1.0
       react: 18.2.0
       styled-jsx: ^5.0.2
     dependencies:
@@ -299,8 +299,8 @@ importers:
 
   packages/input:
     specifiers:
-      '@kontui/theme': 0.0.1
-      '@kontui/utils': ^0.0.1
+      '@kontui/theme': 0.1.0
+      '@kontui/utils': ^0.1.0
       react: 18.2.0
       styled-jsx: ^5.0.2
     dependencies:
@@ -312,8 +312,8 @@ importers:
 
   packages/kbd:
     specifiers:
-      '@kontui/theme': 0.0.1
-      '@kontui/utils': ^0.0.1
+      '@kontui/theme': 0.1.0
+      '@kontui/utils': ^0.1.0
       react: 18.2.0
       styled-jsx: ^5.0.2
     dependencies:
@@ -325,8 +325,8 @@ importers:
 
   packages/layout:
     specifiers:
-      '@kontui/theme': 0.0.1
-      '@kontui/utils': ^0.0.1
+      '@kontui/theme': 0.1.0
+      '@kontui/utils': ^0.1.0
       react: 18.2.0
       styled-jsx: ^5.0.2
     dependencies:
@@ -338,8 +338,8 @@ importers:
 
   packages/link:
     specifiers:
-      '@kontui/theme': 0.0.1
-      '@kontui/utils': ^0.0.1
+      '@kontui/theme': 0.1.0
+      '@kontui/utils': ^0.1.0
       react: 18.2.0
       styled-jsx: ^5.0.2
     dependencies:
@@ -351,8 +351,8 @@ importers:
 
   packages/loading:
     specifiers:
-      '@kontui/theme': 0.0.1
-      '@kontui/utils': ^0.0.1
+      '@kontui/theme': 0.1.0
+      '@kontui/utils': ^0.1.0
       react: 18.2.0
       styled-jsx: ^5.0.2
     dependencies:
@@ -364,9 +364,9 @@ importers:
 
   packages/popover:
     specifiers:
-      '@kontui/theme': 0.0.1
-      '@kontui/tooltip': 0.0.1
-      '@kontui/utils': ^0.0.1
+      '@kontui/theme': 0.1.0
+      '@kontui/tooltip': 0.1.0
+      '@kontui/utils': ^0.1.0
       react: 18.2.0
       styled-jsx: ^5.0.2
     dependencies:
@@ -379,8 +379,8 @@ importers:
 
   packages/rating:
     specifiers:
-      '@kontui/theme': 0.0.1
-      '@kontui/utils': ^0.0.1
+      '@kontui/theme': 0.1.0
+      '@kontui/utils': ^0.1.0
       react: 18.2.0
       styled-jsx: ^5.0.2
     dependencies:
@@ -392,31 +392,31 @@ importers:
 
   packages/react:
     specifiers:
-      '@kontui/accordion': 0.0.1
-      '@kontui/alert': 0.0.1
-      '@kontui/avatar': 0.0.1
-      '@kontui/badge': 0.0.1
-      '@kontui/box': 0.0.1
-      '@kontui/breadcrumb': 0.0.1
-      '@kontui/bullet': 0.0.1
-      '@kontui/button': 0.0.1
-      '@kontui/checkbox': 0.0.1
-      '@kontui/code': 0.0.1
-      '@kontui/image': 0.0.1
-      '@kontui/input': 0.0.1
-      '@kontui/kbd': 0.0.1
-      '@kontui/layout': 0.0.1
-      '@kontui/link': 0.0.1
-      '@kontui/loading': 0.0.1
-      '@kontui/popover': 0.0.1
-      '@kontui/rating': 0.0.1
-      '@kontui/spinner': 0.0.1
-      '@kontui/tag': 0.0.1
-      '@kontui/text': 0.0.1
-      '@kontui/textarea': 0.0.1
-      '@kontui/theme': 0.0.1
-      '@kontui/tooltip': 0.0.1
-      '@kontui/utils': ^0.0.1
+      '@kontui/accordion': 0.1.0
+      '@kontui/alert': 0.1.0
+      '@kontui/avatar': 0.1.0
+      '@kontui/badge': 0.1.0
+      '@kontui/box': 0.1.0
+      '@kontui/breadcrumb': 0.1.0
+      '@kontui/bullet': 0.1.0
+      '@kontui/button': 0.1.0
+      '@kontui/checkbox': 0.1.0
+      '@kontui/code': 0.1.0
+      '@kontui/image': 0.1.0
+      '@kontui/input': 0.1.0
+      '@kontui/kbd': 0.1.0
+      '@kontui/layout': 0.1.0
+      '@kontui/link': 0.1.0
+      '@kontui/loading': 0.1.0
+      '@kontui/popover': 0.1.0
+      '@kontui/rating': 0.1.0
+      '@kontui/spinner': 0.1.0
+      '@kontui/tag': 0.1.0
+      '@kontui/text': 0.1.0
+      '@kontui/textarea': 0.1.0
+      '@kontui/theme': 0.1.0
+      '@kontui/tooltip': 0.1.0
+      '@kontui/utils': ^0.1.0
       react: 18.2.0
       react-dom: 18.2.0
     dependencies:
@@ -451,8 +451,8 @@ importers:
 
   packages/spinner:
     specifiers:
-      '@kontui/theme': 0.0.1
-      '@kontui/utils': ^0.0.1
+      '@kontui/theme': 0.1.0
+      '@kontui/utils': ^0.1.0
       react: 18.2.0
       styled-jsx: ^5.0.2
     dependencies:
@@ -464,8 +464,8 @@ importers:
 
   packages/tag:
     specifiers:
-      '@kontui/theme': 0.0.1
-      '@kontui/utils': ^0.0.1
+      '@kontui/theme': 0.1.0
+      '@kontui/utils': ^0.1.0
       react: 18.2.0
       styled-jsx: ^5.0.2
     dependencies:
@@ -477,8 +477,8 @@ importers:
 
   packages/text:
     specifiers:
-      '@kontui/theme': 0.0.1
-      '@kontui/utils': ^0.0.1
+      '@kontui/theme': 0.1.0
+      '@kontui/utils': ^0.1.0
       react: 18.2.0
       styled-jsx: ^5.0.2
     dependencies:
@@ -490,9 +490,9 @@ importers:
 
   packages/textarea:
     specifiers:
-      '@kontui/input': 0.0.1
-      '@kontui/theme': 0.0.1
-      '@kontui/utils': ^0.0.1
+      '@kontui/input': 0.1.0
+      '@kontui/theme': 0.1.0
+      '@kontui/utils': ^0.1.0
       react: 18.2.0
       styled-jsx: ^5.0.2
     dependencies:
@@ -505,7 +505,7 @@ importers:
 
   packages/theme:
     specifiers:
-      '@kontui/utils': ^0.0.1
+      '@kontui/utils': ^0.1.0
       react: 18.2.0
       styled-jsx: ^5.0.2
     dependencies:
@@ -516,8 +516,8 @@ importers:
 
   packages/tooltip:
     specifiers:
-      '@kontui/theme': 0.0.1
-      '@kontui/utils': ^0.0.1
+      '@kontui/theme': 0.1.0
+      '@kontui/utils': ^0.1.0
       react: 18.2.0
       styled-jsx: ^5.0.2
     dependencies:
