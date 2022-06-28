@@ -7,6 +7,7 @@ import { Col } from "./col"
 import { Container } from "./container"
 import { Divider } from "./divider"
 import { Expand } from "./expand"
+import { Row } from "./row"
 import { Spacer } from "./spacer"
 
 import type { GridProps } from "./grid"
@@ -16,6 +17,7 @@ import type { ColProps } from "./col"
 import type { ContainerProps } from "./container"
 import type { ExpandProps } from "./expand"
 import type { DividerProps } from "./divider"
+import type { RowProps } from "./row"
 import type { SpacerProps } from "./spacer"
 
 interface Grid
@@ -37,6 +39,17 @@ export type {
   ContainerProps,
   DividerProps,
   ExpandProps,
+  RowProps,
   SpacerProps,
 }
-export { Grid, GridContainer, Center, Col, Container, Divider, Expand, Spacer }
+export {
+  Grid,
+  GridContainer,
+  Center,
+  Col,
+  Container,
+  Divider,
+  Expand,
+  Row,
+  Spacer,
+}

@@ -13,24 +13,48 @@ jobs:
     name: Release
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - name: Install pnpm
-        uses: pnpm/action-setup@v2
-      - name: Set node ${{ matrix.node-version }}
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Install Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: ${{ matrix.node-version }}
-          cache: pnpm
+          node-version: 16
+
+      - uses: pnpm/action-setup@v2.0.1
+        name: Install pnpm
+        id: pnpm-install
+        with:
+          version: 7
+          run_install: false
+
+      - name: Get pnpm store directory
+        id: pnpm-cache
+        run: |
+          echo "::set-output name=pnpm_cache_dir::$(pnpm store path)"
+
+      - uses: actions/cache@v3
+        name: Setup pnpm cache
+        with:
+          path: ${{ steps.pnpm-cache.outputs.pnpm_cache_dir }}
+          key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-pnpm-store-
+
       - name: Install dependencies
         run: pnpm install --frozen-lockfile && pnpm bootstrap
+
       - name: Lint code
         run: pnpm lint
+
       - name: Build package
         run: pnpm build
+
       - name: Setup git user (for changelog step)
         run: |
           git config --global user.email "karyana@lokan.id"
           git config --global user.name "Karyana Yandi"
+
       - name: Create release Pull Request or publish to NPM
         id: changesets
         uses: changesets/action@v1
@@ -40,6 +64,7 @@ jobs:
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
       - name: Release to @dev tag
         if: steps.changesets.outputs.published != 'true'
         run: |
@@ -49,6 +74,7 @@ jobs:
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
       - name: Update changelog
         if: steps.changesets.outputs.published == 'true'
         run: |
