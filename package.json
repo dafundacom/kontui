@@ -25,6 +25,7 @@
     "build-storybook": "build-storybook",
     "pkg": "manypkg run",
     "fix:pkgs": "manypkg fix",
+    "changeset": "changeset",
     "version:pkgs": "changeset version",
     "release": "changeset publish",
     "changelog:gen": "ts-node scripts/changelog-generate.ts",
@@ -44,7 +45,7 @@
     "react": "18.2.0",
     "react-dom": "18.2.0"
   },
-  "author": "karyanayandi <karyana@dafund.io>",
+  "author": "karyanayandi <karyana@dafunda.io>",
   "license": "MIT",
   "repository": {
     "type": "git",
