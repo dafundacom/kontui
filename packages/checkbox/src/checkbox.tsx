@@ -10,7 +10,7 @@ import { CheckboxIcon } from "./checkbox-icon"
 import { getCheckboxColors } from "./styles"
 
 import type { DefaultProps, ScaleProps } from "@kontui/theme"
-import type { NormalTypes } from "@kontui/utils"
+import type { BaseColorScheme } from "@kontui/utils"
 
 interface CheckboxEventTarget {
   checked: boolean
@@ -26,7 +26,7 @@ interface CheckboxEvent {
 interface CheckboxProps extends DefaultProps, ScaleProps {
   checked?: boolean
   disabled?: boolean
-  colorScheme?: NormalTypes
+  colorScheme?: BaseColorScheme
   initialChecked?: boolean
   onChange?: (e: CheckboxEvent) => void
   className?: string

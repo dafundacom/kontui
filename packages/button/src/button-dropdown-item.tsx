@@ -7,13 +7,13 @@ import { getButtonDropdownColors } from "./styles"
 import { useButtonDropdown } from "./button-dropdown-context"
 
 import type { DefaultProps } from "@kontui/theme"
-import type { NormalTypes } from "@kontui/utils"
+import type { BaseColorScheme } from "@kontui/utils"
 
 interface ButtonDropdownItemProps
   extends DefaultProps,
     React.HTMLAttributes<HTMLButtonElement> {
   main?: boolean
-  colorScheme?: NormalTypes
+  colorScheme?: BaseColorScheme
   onClick?: React.MouseEventHandler<HTMLElement>
 }
 

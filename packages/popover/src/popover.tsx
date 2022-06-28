@@ -8,20 +8,24 @@ import { PopoverContext } from "./popover-context"
 
 import type { TooltipProps } from "@kontui/tooltip"
 import type { DefaultProps, ScaleProps } from "@kontui/theme"
-import type { Placement, SnippetTypes, TriggerTypes } from "@kontui/utils"
+import type {
+  Placement,
+  SnippetColorScheme,
+  TriggerColorScheme,
+} from "@kontui/utils"
 import type { PopoverConfig } from "./popover-context"
 
-type PopoverTriggerTypes = TriggerTypes
+type PopoverTriggerColorScheme = TriggerColorScheme
 
 interface IPopoverProps
   extends DefaultProps,
     ScaleProps,
     React.HTMLAttributes<HTMLDivElement> {
   content?: React.ReactNode | (() => React.ReactNode)
-  trigger?: PopoverTriggerTypes
+  trigger?: PopoverTriggerColorScheme
   placement?: Placement
   disableItemsAutoClose?: boolean
-  colorScheme?: SnippetTypes
+  colorScheme?: SnippetColorScheme
 }
 
 type ExcludeTooltipProps = {

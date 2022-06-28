@@ -2,23 +2,19 @@ import * as React from "react"
 import { useTheme, useScale } from "@kontui/theme"
 import { __DEV__ } from "@kontui/utils"
 
-import type {
-  DefaultProps,
-  ScaleProps,
-  KontUIThemesPalette,
-} from "@kontui/theme"
-import type { NormalTypes } from "@kontui/utils"
+import type { DefaultProps, ScaleProps, BaseThemePalette } from "@kontui/theme"
+import type { BaseColorScheme } from "@kontui/utils"
 
 interface TextChildProps extends DefaultProps, ScaleProps {
   as: keyof JSX.IntrinsicElements
-  colorScheme?: NormalTypes
+  colorScheme?: BaseColorScheme
 }
 
 const getTextChildColor = (
-  colorScheme: NormalTypes,
-  palette: KontUIThemesPalette,
+  colorScheme: BaseColorScheme,
+  palette: BaseThemePalette,
 ) => {
-  const colors: { [key in NormalTypes]: string } = {
+  const colors: { [key in BaseColorScheme]: string } = {
     default: "inherit",
     secondary: palette.secondary,
     success: palette.success,

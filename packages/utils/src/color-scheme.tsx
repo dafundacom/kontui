@@ -1,8 +1,7 @@
 const tuple = <T extends string[]>(...args: T) => args
-
 const tupleNumber = <T extends number[]>(...args: T) => args
 
-const buttonTypes = tuple(
+const buttonColorScheme = tuple(
   "default",
   "secondary",
   "success",
@@ -15,9 +14,15 @@ const buttonTypes = tuple(
   "error-light",
 )
 
-const normalTypes = tuple("default", "secondary", "success", "warning", "error")
+const baseColorScheme = tuple(
+  "default",
+  "secondary",
+  "success",
+  "warning",
+  "error",
+)
 
-const snippetTypes = tuple(
+const snippetColorScheme = tuple(
   "default",
   "secondary",
   "success",
@@ -27,7 +32,7 @@ const snippetTypes = tuple(
   "lite",
 )
 
-const cardTypes = tuple(
+const boxColorScheme = tuple(
   "default",
   "secondary",
   "success",
@@ -41,9 +46,9 @@ const cardTypes = tuple(
   "cyan",
 )
 
-const copyTypes = tuple("default", "silent", "prevent")
+const copyColorScheme = tuple("default", "silent", "prevent")
 
-const triggerTypes = tuple("hover", "click")
+const triggerColorScheme = tuple("hover", "click")
 
 const placement = tuple(
   "top",
@@ -61,32 +66,24 @@ const placement = tuple(
 )
 
 const dividerAlign = tuple("start", "center", "end", "left", "right")
-
-type ButtonTypes = typeof buttonTypes[number]
-
-type NormalTypes = typeof normalTypes[number]
-
-type SnippetTypes = typeof snippetTypes[number]
-
-type CardTypes = typeof cardTypes[number]
-
-type CopyTypes = typeof copyTypes[number]
-
-type TriggerTypes = typeof triggerTypes[number]
-
+type ButtonColorScheme = typeof buttonColorScheme[number]
+type BaseColorScheme = typeof baseColorScheme[number]
+type SnippetColorScheme = typeof snippetColorScheme[number]
+type BoxColorScheme = typeof boxColorScheme[number]
+type CopyColorScheme = typeof copyColorScheme[number]
+type TriggerColorScheme = typeof triggerColorScheme[number]
 type Placement = typeof placement[number]
-
 type DividerAlign = typeof dividerAlign[number]
 
 export { tuple, tupleNumber }
 
 export type {
-  ButtonTypes,
-  NormalTypes,
-  SnippetTypes,
-  CardTypes,
-  CopyTypes,
-  TriggerTypes,
+  ButtonColorScheme,
+  BaseColorScheme,
+  SnippetColorScheme,
+  BoxColorScheme,
+  CopyColorScheme,
+  TriggerColorScheme,
   Placement,
   DividerAlign,
 }

@@ -2,12 +2,8 @@ import * as React from "react"
 import { useTheme, useScale, withScale } from "@kontui/theme"
 import { useClasses, __DEV__ } from "@kontui/utils"
 
-import type {
-  DefaultProps,
-  ScaleProps,
-  KontUIThemesPalette,
-} from "@kontui/theme"
-import type { NormalTypes } from "@kontui/utils"
+import type { DefaultProps, ScaleProps, BaseThemePalette } from "@kontui/theme"
+import type { BaseColorScheme } from "@kontui/utils"
 
 interface BadgeProps
   extends DefaultProps,
@@ -16,13 +12,13 @@ interface BadgeProps
   /* as element*/
   as?: React.ElementType
   /* Controls badge appearance */
-  colorScheme?: NormalTypes
+  colorScheme?: BaseColorScheme
   /* If `true` badge has dot */
   dot?: boolean
 }
 
-const getBgColor = (type: NormalTypes, palette: KontUIThemesPalette) => {
-  const colors: { [key in NormalTypes]: string } = {
+const getBgColor = (type: BaseColorScheme, palette: BaseThemePalette) => {
+  const colors: { [key in BaseColorScheme]: string } = {
     default: palette.foreground,
     success: palette.success,
     warning: palette.warning,

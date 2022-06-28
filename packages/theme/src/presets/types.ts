@@ -1,4 +1,4 @@
-export interface KontUIThemesPalette {
+export interface BaseThemePalette {
   accents_1: string
   accents_2: string
   accents_3: string
@@ -39,7 +39,7 @@ export interface KontUIThemesPalette {
   alert: string
 }
 
-export interface KontUIThemesExpressiveness {
+export interface BaseThemeExpressiveness {
   linkStyle: string
   linkHoverStyle: string
   dropdownBoxShadow: string
@@ -51,7 +51,7 @@ export interface KontUIThemesExpressiveness {
   portalOpacity: number
 }
 
-export interface KontUIThemesLayout {
+export interface BaseThemeLayout {
   gap: string
   gapNegative: string
   gapHalf: string
@@ -67,7 +67,7 @@ export interface KontUIThemesLayout {
   unit: string
 }
 
-export interface KontUIThemesFont {
+export interface BaseThemeFont {
   sans: string
   mono: string
   prism: string
@@ -78,7 +78,7 @@ export interface BreakpointsItem {
   max: string
 }
 
-export interface KontUIThemesBreakpoints {
+export interface BaseThemeBreakpoints {
   xs: BreakpointsItem
   sm: BreakpointsItem
   md: BreakpointsItem
@@ -86,11 +86,11 @@ export interface KontUIThemesBreakpoints {
   xl: BreakpointsItem
 }
 
-export interface KontUIThemes {
+export interface BaseTheme {
   type: string
-  font: KontUIThemesFont
-  layout: KontUIThemesLayout
-  palette: KontUIThemesPalette
-  breakpoints: KontUIThemesBreakpoints
-  expressiveness: KontUIThemesExpressiveness
+  font: BaseThemeFont
+  layout: BaseThemeLayout
+  palette: BaseThemePalette
+  breakpoints: BaseThemeBreakpoints
+  expressiveness: BaseThemeExpressiveness
 }

@@ -2,14 +2,10 @@ import * as React from "react"
 import { useTheme, useScale, withScale } from "@kontui/theme"
 import { __DEV__ } from "@kontui/utils"
 
-import type { SnippetTypes } from "@kontui/utils"
-import type {
-  DefaultProps,
-  ScaleProps,
-  KontUIThemesPalette,
-} from "@kontui/theme"
+import type { SnippetColorScheme } from "@kontui/utils"
+import type { DefaultProps, ScaleProps, BaseThemePalette } from "@kontui/theme"
 
-type TagColorTypes = SnippetTypes
+type TagColorTypes = SnippetColorScheme
 
 interface TagProps
   extends DefaultProps,
@@ -28,7 +24,7 @@ type TagColors = {
 
 const getTagColors = (
   colorScheme: TagColorTypes,
-  palette: KontUIThemesPalette,
+  palette: BaseThemePalette,
   invert: boolean,
 ) => {
   const colors: {

@@ -1,10 +1,8 @@
 import { addColorAlpha } from "@kontui/utils"
 import { ButtonProps } from "./button"
 
-import type { KontUIThemesPalette } from "@kontui/theme"
-import type { NormalTypes, ButtonTypes } from "@kontui/utils"
-
-type ButtonColorScheme = ButtonTypes
+import type { BaseThemePalette } from "@kontui/theme"
+import type { BaseColorScheme, ButtonColorScheme } from "@kontui/utils"
 
 interface ButtonColorGroup {
   bg: string
@@ -13,7 +11,7 @@ interface ButtonColorGroup {
 }
 
 const getButtonGhostColors = (
-  palette: KontUIThemesPalette,
+  palette: BaseThemePalette,
   colorScheme: ButtonColorScheme,
 ): ButtonColorGroup | null => {
   const colors: { [key in ButtonColorScheme]?: ButtonColorGroup } = {
@@ -43,7 +41,7 @@ const getButtonGhostColors = (
 }
 
 const getButtonColors = (
-  palette: KontUIThemesPalette,
+  palette: BaseThemePalette,
   props: ButtonProps,
 ): ButtonColorGroup => {
   const { colorScheme, disabled, ghost } = props
@@ -86,13 +84,6 @@ const getButtonColors = (
       color: "#ccc",
     }
 
-  /**
-   * The '-light' type is the same color as the common type,
-   * only hover's color is different.
-   * e.g.
-   *   Color['success'] === Color['success-light']
-   *   Color['warning'] === Color['warning-light']
-   */
   const withoutLightType = colorScheme?.replace(
     "-light",
     "",
@@ -105,7 +96,7 @@ const getButtonColors = (
 }
 
 const getButtonGhostHoverColors = (
-  palette: KontUIThemesPalette,
+  palette: BaseThemePalette,
   colorScheme: ButtonColorScheme,
 ): ButtonColorGroup | null => {
   const colors: { [key in ButtonColorScheme]?: ButtonColorGroup } = {
@@ -138,7 +129,7 @@ const getButtonGhostHoverColors = (
 }
 
 const getButtonHoverColors = (
-  palette: KontUIThemesPalette,
+  palette: BaseThemePalette,
   props: ButtonProps,
 ): ButtonColorGroup => {
   const { colorScheme, disabled, loading, shadow, ghost } = props
@@ -240,10 +231,7 @@ const getButtonCursor = (
   }
 }
 
-const getButtonDripColor = (
-  palette: KontUIThemesPalette,
-  props: ButtonProps,
-) => {
+const getButtonDripColor = (palette: BaseThemePalette, props: ButtonProps) => {
   const { colorScheme } = props
   const isLightHover = colorScheme?.endsWith("light")
   const hoverColors = getButtonHoverColors(palette, props)
@@ -261,11 +249,11 @@ type ButtonDropdownColors = {
 }
 
 const getButtonDropdownColors = (
-  palette: KontUIThemesPalette,
-  colorScheme: NormalTypes | undefined,
+  palette: BaseThemePalette,
+  colorScheme: BaseColorScheme | undefined,
   disabled: boolean = false,
 ) => {
-  const colors: { [key in NormalTypes]: ButtonDropdownColors } = {
+  const colors: { [key in BaseColorScheme]: ButtonDropdownColors } = {
     default: {
       color: palette.accents_5,
       bgColor: palette.background,

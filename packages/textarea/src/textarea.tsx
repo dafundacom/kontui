@@ -7,7 +7,7 @@ import { useTheme, useScale, withScale } from "@kontui/theme"
 import { useClasses, tuple, __DEV__ } from "@kontui/utils"
 
 import type { DefaultProps, ScaleProps } from "@kontui/theme"
-import type { NormalTypes } from "@kontui/utils"
+import type { BaseColorScheme } from "@kontui/utils"
 
 const resizeTypes = tuple(
   "none",
@@ -26,7 +26,7 @@ interface TextareaProps
   value?: string
   initialValue?: string
   placeholder?: string
-  colorScheme?: NormalTypes
+  colorScheme?: BaseColorScheme
   disabled?: boolean
   readOnly?: boolean
   onChange?: (e: React.ChangeEvent<HTMLTextAreaElement>) => void

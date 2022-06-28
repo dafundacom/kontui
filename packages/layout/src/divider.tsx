@@ -2,26 +2,22 @@ import * as React from "react"
 import { useTheme, useScale, withScale } from "@kontui/theme"
 import { useClasses, __DEV__ } from "@kontui/utils"
 
-import type {
-  DefaultProps,
-  ScaleProps,
-  KontUIThemesPalette,
-} from "@kontui/theme"
-import type { DividerAlign, SnippetTypes } from "@kontui/utils"
+import type { DefaultProps, ScaleProps, BaseThemePalette } from "@kontui/theme"
+import type { DividerAlign, SnippetColorScheme } from "@kontui/utils"
 
 interface DividerProps
   extends DefaultProps,
     ScaleProps,
     React.HTMLAttributes<HTMLDivElement> {
-  colorScheme?: SnippetTypes
+  colorScheme?: SnippetColorScheme
   align?: DividerAlign
 }
 
 const getDividerColor = (
-  colorScheme: SnippetTypes,
-  palette: KontUIThemesPalette,
+  colorScheme: SnippetColorScheme,
+  palette: BaseThemePalette,
 ) => {
-  const colors: { [key in SnippetTypes]: string } = {
+  const colors: { [key in SnippetColorScheme]: string } = {
     default: palette.border,
     lite: palette.accents_1,
     success: palette.successLight,

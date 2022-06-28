@@ -1,5 +1,5 @@
-import type { KontUIThemesPalette } from "@kontui/theme"
-import type { NormalTypes } from "@kontui/utils"
+import type { BaseThemePalette } from "@kontui/theme"
+import type { BaseColorScheme } from "@kontui/utils"
 
 type CheckboxColor = {
   fill: string
@@ -7,10 +7,10 @@ type CheckboxColor = {
 }
 
 const getCheckboxColors = (
-  palette: KontUIThemesPalette,
-  status?: NormalTypes,
+  palette: BaseThemePalette,
+  status?: BaseColorScheme,
 ): CheckboxColor => {
-  const colors: { [key in NormalTypes]: CheckboxColor } = {
+  const colors: { [key in BaseColorScheme]: CheckboxColor } = {
     default: {
       fill: palette.foreground,
       bg: palette.background,
