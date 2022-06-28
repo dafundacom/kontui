@@ -8,19 +8,17 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: [14.x, 16.x, 17.x]
+        node-version: [14.x, 16.x]
     steps:
-      # Checkout repo
-      - uses: actions/checkout@v2
-
-      - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v1
+      - uses: actions/checkout@v3
+      - name: Install pnpm
+        uses: pnpm/action-setup@v2
+      - name: Set node ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
-
-      # install dependencies from yarn.lock
-      - name: Install dependencies with yarn
+          cache: pnpm
+      - name: Install dependencies
         run: pnpm install --frozen-lockfile
-
-      # Run linting with yarn
-      - run: pnpm lint
+      - name: Lint code
+        run: pnpm lint
