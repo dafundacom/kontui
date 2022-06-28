@@ -20,7 +20,7 @@ jobs:
 
       # install dependencies from yarn.lock
       - name: Install dependencies with yarn
-        run: yarn install --frozen-lockfile
+        run: pnpm install --frozen-lockfile
 
       # Run linting with yarn
-      - run: yarn lint
+      - run: pnpm lint
