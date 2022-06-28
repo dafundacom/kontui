@@ -16,44 +16,26 @@ jobs:
         uses: styfle/cancel-workflow-action@0.9.1
         with:
           access_token: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Get pnpm store directory
-        id: pnpm-cache
-        run: |
-          echo "::set-output name=pnpm_cache_dir::$(pnpm store path)"
-
-      - name: Checkout
-        uses: actions/checkout@master
+      - uses: actions/checkout@v3
+      - name: Install pnpm
+        uses: pnpm/action-setup@v2
+      - name: Set node ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
         with:
-          ref: main
-
-      - name: Enable node
-        uses: actions/setup-node@master
-        with:
-          node-version: 16.x
-
-      - uses: actions/cache@v3
-        name: Setup pnpm cache
-        with:
-          path: ${{ steps.pnpm-cache.outputs.pnpm_cache_dir }}
-          key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
-          restore-keys: |
-            ${{ runner.os }}-pnpm-store-
+          node-version: ${{ matrix.node-version }}
+          cache: pnpm
+      - name: Install dependencies
         run: pnpm install --frozen-lockfile && pnpm bootstrap
-
       - name: Setup Git
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-
       - name: Generate the new changelog
         run: pnpm changelog:gen
-
       - name: Commit changelog
         run: |
           git add .
           git diff --staged --quiet || git commit -m "docs(changelog): $GITHUB_SHA"
-
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v3
         with:
