@@ -1,5 +1,6 @@
-## 30-06-2022
+## 01-07-2022
 
-**Kontui Utils** `v0.1.1`
+**Kontui React** `v0.2.0`
 
-- add useDOMClean hook
+- add dropdown and select component
+- add select and dropdown component
