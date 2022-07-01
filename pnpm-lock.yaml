@@ -43,7 +43,6 @@ importers:
       '@types/shelljs': ^0.8.11
       '@typescript-eslint/eslint-plugin': ^5.30.0
       '@typescript-eslint/parser': ^5.30.0
-      autoprefixer: ^10.4.7
       babel-loader: ^8.2.5
       commitizen: ^4.2.4
       concurrently: ^7.2.2
@@ -64,11 +63,9 @@ importers:
       lerna: ^5.1.6
       lint-staged: ^13.0.3
       lodash: ^4.17.21
-      postcss: ^8.4.14
       prettier: ^2.7.1
       react: 18.2.0
       react-dom: 18.2.0
-      react-icons: ^4.4.0
       rimraf: ^3.0.2
       shelljs: ^0.8.5
       storybook-addon-performance: ^0.16.1
@@ -112,7 +109,6 @@ importers:
       '@types/shelljs': 0.8.11
       '@typescript-eslint/eslint-plugin': 5.30.0_5mtqsiui4sk53pmkx7i7ue45wm
       '@typescript-eslint/parser': 5.30.0_b5e7v2qnwxfo6hmiq56u52mz3e
-      autoprefixer: 10.4.7_postcss@8.4.14
       babel-loader: 8.2.5_xcbjw3zjektbxpb7yraegegdpi
       commitizen: 4.2.4
       concurrently: 7.2.2
@@ -133,11 +129,9 @@ importers:
       lerna: 5.1.6
       lint-staged: 13.0.3
       lodash: 4.17.21
-      postcss: 8.4.14
       prettier: 2.7.1
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
-      react-icons: 4.4.0_react@18.2.0
       rimraf: 3.0.2
       shelljs: 0.8.5
       storybook-addon-performance: 0.16.1_6qxi7jutldbruegynetmv4f6me
@@ -156,7 +150,7 @@ importers:
     dependencies:
       '@kontui/layout': link:../layout
       '@kontui/theme': link:../theme
-      '@kontui/utils': link:../utils
+      '@kontui/utils': 0.1.1_react@18.2.0
       styled-jsx: 5.0.2_react@18.2.0
     devDependencies:
       react: 18.2.0
@@ -169,7 +163,7 @@ importers:
       styled-jsx: ^5.0.2
     dependencies:
       '@kontui/theme': link:../theme
-      '@kontui/utils': link:../utils
+      '@kontui/utils': 0.1.1_react@18.2.0
       styled-jsx: 5.0.2_react@18.2.0
     devDependencies:
       react: 18.2.0
@@ -182,7 +176,7 @@ importers:
       styled-jsx: ^5.0.2
     dependencies:
       '@kontui/theme': link:../theme
-      '@kontui/utils': link:../utils
+      '@kontui/utils': 0.1.1_react@18.2.0
       styled-jsx: 5.0.2_react@18.2.0
     devDependencies:
       react: 18.2.0
@@ -195,7 +189,7 @@ importers:
       styled-jsx: ^5.0.2
     dependencies:
       '@kontui/theme': link:../theme
-      '@kontui/utils': link:../utils
+      '@kontui/utils': 0.1.1_react@18.2.0
       styled-jsx: 5.0.2_react@18.2.0
     devDependencies:
       react: 18.2.0
@@ -210,7 +204,7 @@ importers:
     dependencies:
       '@kontui/image': link:../image
       '@kontui/theme': link:../theme
-      '@kontui/utils': link:../utils
+      '@kontui/utils': 0.1.1_react@18.2.0
       styled-jsx: 5.0.2_react@18.2.0
     devDependencies:
       react: 18.2.0
@@ -225,7 +219,7 @@ importers:
     dependencies:
       '@kontui/link': link:../link
       '@kontui/theme': link:../theme
-      '@kontui/utils': link:../utils
+      '@kontui/utils': 0.1.1_react@18.2.0
       styled-jsx: 5.0.2_react@18.2.0
     devDependencies:
       react: 18.2.0
@@ -238,7 +232,7 @@ importers:
       styled-jsx: ^5.0.2
     dependencies:
       '@kontui/theme': link:../theme
-      '@kontui/utils': link:../utils
+      '@kontui/utils': 0.1.1_react@18.2.0
       styled-jsx: 5.0.2_react@18.2.0
     devDependencies:
       react: 18.2.0
@@ -253,7 +247,7 @@ importers:
     dependencies:
       '@kontui/loading': link:../loading
       '@kontui/theme': link:../theme
-      '@kontui/utils': link:../utils
+      '@kontui/utils': 0.1.1_react@18.2.0
       styled-jsx: 5.0.2_react@18.2.0
     devDependencies:
       react: 18.2.0
@@ -266,7 +260,7 @@ importers:
       styled-jsx: ^5.0.2
     dependencies:
       '@kontui/theme': link:../theme
-      '@kontui/utils': link:../utils
+      '@kontui/utils': 0.1.1_react@18.2.0
       styled-jsx: 5.0.2_react@18.2.0
     devDependencies:
       react: 18.2.0
@@ -279,7 +273,20 @@ importers:
       styled-jsx: ^5.0.2
     dependencies:
       '@kontui/theme': link:../theme
-      '@kontui/utils': link:../utils
+      '@kontui/utils': 0.1.1_react@18.2.0
+      styled-jsx: 5.0.2_react@18.2.0
+    devDependencies:
+      react: 18.2.0
+
+  packages/dropdown:
+    specifiers:
+      '@kontui/theme': 0.1.0
+      '@kontui/utils': ^0.1.0
+      react: 18.2.0
+      styled-jsx: ^5.0.2
+    dependencies:
+      '@kontui/theme': link:../theme
+      '@kontui/utils': 0.1.1_react@18.2.0
       styled-jsx: 5.0.2_react@18.2.0
     devDependencies:
       react: 18.2.0
@@ -292,7 +299,7 @@ importers:
       styled-jsx: ^5.0.2
     dependencies:
       '@kontui/theme': link:../theme
-      '@kontui/utils': link:../utils
+      '@kontui/utils': 0.1.1_react@18.2.0
       styled-jsx: 5.0.2_react@18.2.0
     devDependencies:
       react: 18.2.0
@@ -305,7 +312,7 @@ importers:
       styled-jsx: ^5.0.2
     dependencies:
       '@kontui/theme': link:../theme
-      '@kontui/utils': link:../utils
+      '@kontui/utils': 0.1.1_react@18.2.0
       styled-jsx: 5.0.2_react@18.2.0
     devDependencies:
       react: 18.2.0
@@ -318,7 +325,7 @@ importers:
       styled-jsx: ^5.0.2
     dependencies:
       '@kontui/theme': link:../theme
-      '@kontui/utils': link:../utils
+      '@kontui/utils': 0.1.1_react@18.2.0
       styled-jsx: 5.0.2_react@18.2.0
     devDependencies:
       react: 18.2.0
@@ -331,7 +338,7 @@ importers:
       styled-jsx: ^5.0.2
     dependencies:
       '@kontui/theme': link:../theme
-      '@kontui/utils': link:../utils
+      '@kontui/utils': 0.1.1_react@18.2.0
       styled-jsx: 5.0.2_react@18.2.0
     devDependencies:
       react: 18.2.0
@@ -344,7 +351,7 @@ importers:
       styled-jsx: ^5.0.2
     dependencies:
       '@kontui/theme': link:../theme
-      '@kontui/utils': link:../utils
+      '@kontui/utils': 0.1.1_react@18.2.0
       styled-jsx: 5.0.2_react@18.2.0
     devDependencies:
       react: 18.2.0
@@ -357,7 +364,7 @@ importers:
       styled-jsx: ^5.0.2
     dependencies:
       '@kontui/theme': link:../theme
-      '@kontui/utils': link:../utils
+      '@kontui/utils': 0.1.1_react@18.2.0
       styled-jsx: 5.0.2_react@18.2.0
     devDependencies:
       react: 18.2.0
@@ -372,7 +379,7 @@ importers:
     dependencies:
       '@kontui/theme': link:../theme
       '@kontui/tooltip': link:../tooltip
-      '@kontui/utils': link:../utils
+      '@kontui/utils': 0.1.1_react@18.2.0
       styled-jsx: 5.0.2_react@18.2.0
     devDependencies:
       react: 18.2.0
@@ -385,7 +392,7 @@ importers:
       styled-jsx: ^5.0.2
     dependencies:
       '@kontui/theme': link:../theme
-      '@kontui/utils': link:../utils
+      '@kontui/utils': 0.1.1_react@18.2.0
       styled-jsx: 5.0.2_react@18.2.0
     devDependencies:
       react: 18.2.0
@@ -402,6 +409,7 @@ importers:
       '@kontui/button': 0.1.0
       '@kontui/checkbox': 0.1.0
       '@kontui/code': 0.1.0
+      '@kontui/dropdown': 0.1.0
       '@kontui/image': 0.1.0
       '@kontui/input': 0.1.0
       '@kontui/kbd': 0.1.0
@@ -410,6 +418,7 @@ importers:
       '@kontui/loading': 0.1.0
       '@kontui/popover': 0.1.0
       '@kontui/rating': 0.1.0
+      '@kontui/select': 0.1.0
       '@kontui/spinner': 0.1.0
       '@kontui/tag': 0.1.0
       '@kontui/text': 0.1.0
@@ -430,6 +439,7 @@ importers:
       '@kontui/button': link:../button
       '@kontui/checkbox': link:../checkbox
       '@kontui/code': link:../code
+      '@kontui/dropdown': link:../dropdown
       '@kontui/image': link:../image
       '@kontui/input': link:../input
       '@kontui/kbd': link:../kbd
@@ -438,16 +448,32 @@ importers:
       '@kontui/loading': link:../loading
       '@kontui/popover': link:../popover
       '@kontui/rating': link:../rating
+      '@kontui/select': link:../select
       '@kontui/spinner': link:../spinner
       '@kontui/tag': link:../tag
       '@kontui/text': link:../text
       '@kontui/textarea': link:../textarea
       '@kontui/theme': link:../theme
       '@kontui/tooltip': link:../tooltip
-      '@kontui/utils': link:../utils
+      '@kontui/utils': 0.1.1_react@18.2.0
     devDependencies:
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
+
+  packages/select:
+    specifiers:
+      '@kontui/layout': 0.1.0
+      '@kontui/theme': 0.1.0
+      '@kontui/utils': ^0.1.0
+      react: 18.2.0
+      styled-jsx: ^5.0.2
+    dependencies:
+      '@kontui/layout': link:../layout
+      '@kontui/theme': link:../theme
+      '@kontui/utils': 0.1.1_react@18.2.0
+      styled-jsx: 5.0.2_react@18.2.0
+    devDependencies:
+      react: 18.2.0
 
   packages/spinner:
     specifiers:
@@ -457,7 +483,7 @@ importers:
       styled-jsx: ^5.0.2
     dependencies:
       '@kontui/theme': link:../theme
-      '@kontui/utils': link:../utils
+      '@kontui/utils': 0.1.1_react@18.2.0
       styled-jsx: 5.0.2_react@18.2.0
     devDependencies:
       react: 18.2.0
@@ -470,7 +496,7 @@ importers:
       styled-jsx: ^5.0.2
     dependencies:
       '@kontui/theme': link:../theme
-      '@kontui/utils': link:../utils
+      '@kontui/utils': 0.1.1_react@18.2.0
       styled-jsx: 5.0.2_react@18.2.0
     devDependencies:
       react: 18.2.0
@@ -483,7 +509,7 @@ importers:
       styled-jsx: ^5.0.2
     dependencies:
       '@kontui/theme': link:../theme
-      '@kontui/utils': link:../utils
+      '@kontui/utils': 0.1.1_react@18.2.0
       styled-jsx: 5.0.2_react@18.2.0
     devDependencies:
       react: 18.2.0
@@ -498,7 +524,7 @@ importers:
     dependencies:
       '@kontui/input': link:../input
       '@kontui/theme': link:../theme
-      '@kontui/utils': link:../utils
+      '@kontui/utils': 0.1.1_react@18.2.0
       styled-jsx: 5.0.2_react@18.2.0
     devDependencies:
       react: 18.2.0
@@ -509,7 +535,7 @@ importers:
       react: 18.2.0
       styled-jsx: ^5.0.2
     dependencies:
-      '@kontui/utils': link:../utils
+      '@kontui/utils': 0.1.1_react@18.2.0
       styled-jsx: 5.0.2_react@18.2.0
     devDependencies:
       react: 18.2.0
@@ -522,7 +548,7 @@ importers:
       styled-jsx: ^5.0.2
     dependencies:
       '@kontui/theme': link:../theme
-      '@kontui/utils': link:../utils
+      '@kontui/utils': 0.1.1_react@18.2.0
       styled-jsx: 5.0.2_react@18.2.0
     devDependencies:
       react: 18.2.0
@@ -2693,6 +2719,14 @@ packages:
       '@jridgewell/resolve-uri': 3.0.8
       '@jridgewell/sourcemap-codec': 1.4.14
     dev: true
+
+  /@kontui/utils/0.1.1_react@18.2.0:
+    resolution: {integrity: sha512-CR0Df26SROK6LKSkV90moXhNKZhRn84QyLrxAkB7Umj5c1acQWNXVQBn5sb9COzsJKWtbZM6AOtW+/DMSq/PZQ==}
+    peerDependencies:
+      react: ^18.2.0
+    dependencies:
+      react: 18.2.0
+    dev: false
 
   /@lerna/add/5.1.6:
     resolution: {integrity: sha512-+dc5LUxFSxlTgDcC+nTdbFnUphmcGsypPF0eeYPc6tqUrpOpp3Ubn07dRGG0DbpZjk/roZj38DAvx7LYFalZAQ==}
@@ -6486,22 +6520,6 @@ packages:
     hasBin: true
     dev: true
 
-  /autoprefixer/10.4.7_postcss@8.4.14:
-    resolution: {integrity: sha512-ypHju4Y2Oav95SipEcCcI5J7CGPuvz8oat7sUtYj3ClK44bldfvtvcxK6IEK++7rqB7YchDGzweZIBG+SD0ZAA==}
-    engines: {node: ^10 || ^12 || >=14}
-    hasBin: true
-    peerDependencies:
-      postcss: ^8.1.0
-    dependencies:
-      browserslist: 4.21.1
-      caniuse-lite: 1.0.30001359
-      fraction.js: 4.2.0
-      normalize-range: 0.1.2
-      picocolors: 1.0.0
-      postcss: 8.4.14
-      postcss-value-parser: 4.2.0
-    dev: true
-
   /autoprefixer/9.8.8:
     resolution: {integrity: sha512-eM9d/swFopRt5gdJ7jrpCwgvEMIayITpojhkkSMRsFHYuH5bkSQ4p/9qTEHtmNudUZh22Tehu7I6CxAW0IXTKA==}
     hasBin: true
@@ -9614,10 +9632,6 @@ packages:
   /forwarded/0.2.0:
     resolution: {integrity: sha512-buRG0fpBtRHSTCOASe6hD258tEubFoRLb4ZNA6NxMVHNw2gOcwHo9wyablzMzOA5z9xA9L1KNjk/Nt6MT9aYow==}
     engines: {node: '>= 0.6'}
-    dev: true
-
-  /fraction.js/4.2.0:
-    resolution: {integrity: sha512-MhLuK+2gUcnZe8ZHlaaINnQLl0xRIGRfcGk2yl8xoQAfHrSsL3rYu6FCmBdkdbhc9EPlwyGHewaRsvwRMJtAlA==}
     dev: true
 
   /fragment-cache/0.2.1:
@@ -13572,15 +13586,6 @@ packages:
       source-map: 0.6.1
     dev: true
 
-  /postcss/8.4.14:
-    resolution: {integrity: sha512-E398TUmfAYFPBSdzgeieK2Y1+1cpdxJx8yXbK/m57nRhKSmk1GB2tO4lbLBtlkfPQTDKfe4Xqv1ASWPpayPEig==}
-    engines: {node: ^10 || ^12 || >=14}
-    dependencies:
-      nanoid: 3.3.4
-      picocolors: 1.0.0
-      source-map-js: 1.0.2
-    dev: true
-
   /preferred-pm/3.0.3:
     resolution: {integrity: sha512-+wZgbxNES/KlJs9q40F/1sfOd/j7f1O9JaHcW5Dsn3aUUOZg3L2bjpVUcKV2jvtElYfoTuQiNeMfQJ4kwUAhCQ==}
     engines: {node: '>=10'}
@@ -14016,14 +14021,6 @@ packages:
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
       react-is: 17.0.2
-    dev: true
-
-  /react-icons/4.4.0_react@18.2.0:
-    resolution: {integrity: sha512-fSbvHeVYo/B5/L4VhB7sBA1i2tS8MkT0Hb9t2H1AVPkwGfVHLJCqyr2Py9dKMxsyM63Eng1GkdZfbWj+Fmv8Rg==}
-    peerDependencies:
-      react: '*'
-    dependencies:
-      react: 18.2.0
     dev: true
 
   /react-inspector/5.1.1_react@18.2.0:
@@ -15057,11 +15054,6 @@ packages:
     resolution: {integrity: sha512-qnQ7gVMxGNxsiL4lEuJwe/To8UnK7fAnmbGEEH8RpLouuKbeEm0lhbQVFIrNSuB+G7tVrAlVsZgETT5nljf+Iw==}
     dev: true
 
-  /source-map-js/1.0.2:
-    resolution: {integrity: sha512-R0XvVJ9WusLiqTCEiGCmICCMplcCkIwwR11mOSD9CR5u+IXYdiseeEuXCVAjS54zqwkLcPNnmU4OeJ6tUrWhDw==}
-    engines: {node: '>=0.10.0'}
-    dev: true
-
   /source-map-resolve/0.5.3:
     resolution: {integrity: sha512-Htz+RnsXWk5+P2slx5Jh3Q66vhQj1Cllm0zvnaY98+NFx+Dv2CF/f5O/t8x+KaNdrdIAsruNzoh/KpialbqAnw==}
     deprecated: See https://github.com/lydell/source-map-resolve#deprecated
@@ -15560,7 +15552,6 @@ packages:
         optional: true
     dependencies:
       react: 18.2.0
-    dev: false
 
   /supports-color/5.5.0:
     resolution: {integrity: sha512-QjVjwdXIt408MIiAqCX4oUKsgU2EqAGzs2Ppkm4aQYbjm+ZEWEcW4SfFNTr4uMNZma0ey4f5lgLrkB0aX0QMow==}
