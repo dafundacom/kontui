@@ -462,12 +462,14 @@ importers:
 
   packages/select:
     specifiers:
+      '@kontui/dropdown': 0.1.0
       '@kontui/layout': 0.1.0
       '@kontui/theme': 0.1.0
       '@kontui/utils': ^0.1.0
       react: 18.2.0
       styled-jsx: ^5.0.2
     dependencies:
+      '@kontui/dropdown': link:../dropdown
       '@kontui/layout': link:../layout
       '@kontui/theme': link:../theme
       '@kontui/utils': 0.1.1_react@18.2.0

@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-unused-expressions */
+/* eslint-disable react-hooks/rules-of-hooks */
 import * as React from "react"
 import { Ellipsis } from "@kontui/layout"
 import { useTheme, useScale, withScale } from "@kontui/theme"
@@ -73,7 +75,7 @@ const SelectOptionBase: React.FunctionComponent<SelectOptionProps> = (
     event.nativeEvent.stopImmediatePropagation()
     event.preventDefault()
     if (isDisabled || isLabel) return
-    updateValue && updateValue(identValue)
+    updateValue && updateValue(identValue as string)
   }
 
   return (
