@@ -1,5 +1,19 @@
 # @kontui/react
 
+## 0.2.0
+
+### Minor Changes
+
+- [#21](https://github.com/dafundacom/kontui/pull/21)
+  [`db115a5`](https://github.com/dafundacom/kontui/commit/db115a5d1fedace062831ddba1eecdb354dfe68f)
+  Thanks [@karyanayandi](https://github.com/karyanayandi)! - add dropdown and
+  select component
+
+* [#23](https://github.com/dafundacom/kontui/pull/23)
+  [`775c7ce`](https://github.com/dafundacom/kontui/commit/775c7cefac5f2f0d3dc26a683cb30e6c1b3706b7)
+  Thanks [@karyanayandi](https://github.com/karyanayandi)! - add select and
+  dropdown component
+
 ## 0.1.0
 
 ### Minor Changes
