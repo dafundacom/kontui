@@ -1,3 +1,5 @@
+/* eslint-disable react-hooks/exhaustive-deps */
+/* eslint-disable @typescript-eslint/no-unused-expressions */
 import * as React from "react"
 import { useTheme, useScale, withScale } from "@kontui/theme"
 import {
@@ -14,7 +16,7 @@ import { SelectContext } from "./select-context"
 import { SelectInput } from "./select-input"
 
 import type { DefaultProps, ScaleProps, BaseThemePalette } from "@kontui/theme"
-import { BaseColorScheme } from "@kontui/utils"
+import type { BaseColorScheme } from "@kontui/utils"
 import type { SelectConfig } from "./select-context"
 
 export type SelectColor = {
@@ -79,7 +81,7 @@ interface SelectProps
   colorScheme?: BaseColorScheme
   value?: string | string[]
   initialValue?: string | string[]
-  icon?: React.ComponentType
+  icon?: React.ReactNode
   onChange?: any
   // onChange?: (
   //   value: string | string[],
@@ -266,11 +268,7 @@ const SelectBase = React.forwardRef<SelectRef, SelectProps>(
             >
               {children}
             </SelectDropdown>
-            {!pure && (
-              <div className="icon">
-                <SelectIcon />
-              </div>
-            )}
+            {!pure && <div className="icon">{icon}</div>}
           </div>
           <style jsx>{`
             .select {
