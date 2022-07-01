@@ -6,6 +6,7 @@ import { Center } from "./center"
 import { Col } from "./col"
 import { Container } from "./container"
 import { Divider } from "./divider"
+import { Ellipsis } from "./ellipsis"
 import { Expand } from "./expand"
 import { Row } from "./row"
 import { Spacer } from "./spacer"
@@ -15,6 +16,7 @@ import type { GridContainerProps } from "./grid-container"
 import type { CenterProps } from "./center"
 import type { ColProps } from "./col"
 import type { ContainerProps } from "./container"
+import type { EllipsisProps } from "./ellipsis"
 import type { ExpandProps } from "./expand"
 import type { DividerProps } from "./divider"
 import type { RowProps } from "./row"
@@ -38,6 +40,7 @@ export type {
   ColProps,
   ContainerProps,
   DividerProps,
+  EllipsisProps,
   ExpandProps,
   RowProps,
   SpacerProps,
@@ -49,6 +52,7 @@ export {
   Col,
   Container,
   Divider,
+  Ellipsis,
   Expand,
   Row,
   Spacer,
