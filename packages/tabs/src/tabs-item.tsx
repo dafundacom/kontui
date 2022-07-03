@@ -1,3 +1,5 @@
+/* eslint-disable react-hooks/exhaustive-deps */
+/* eslint-disable @typescript-eslint/no-unused-expressions */
 import * as React from "react"
 import { useTheme, useScale, withScale } from "@kontui/theme"
 import { useClasses, __DEV__ } from "@kontui/utils"
@@ -144,7 +146,6 @@ const TabsItemBase: React.FunctionComponent<TabsItemProps> = (props) => {
     register && register({ value, cell: TabsInternalCell })
   }, [value, label, disabled])
 
-  /* eslint-disable react/jsx-no-useless-fragment */
   return isActive ? <>{children}</> : null
 }
 
