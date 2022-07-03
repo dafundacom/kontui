@@ -1,5 +1,43 @@
 # @kontui/react
 
+## 0.2.2
+
+### Patch Changes
+
+- [#33](https://github.com/dafundacom/kontui/pull/33)
+  [`de6c344`](https://github.com/dafundacom/kontui/commit/de6c3449384db9cae134acec0dce16c314702ca4)
+  Thanks [@karyanayandi](https://github.com/karyanayandi)! - add useMediaQuery
+  hook
+
+- Updated dependencies
+  [[`de6c344`](https://github.com/dafundacom/kontui/commit/de6c3449384db9cae134acec0dce16c314702ca4)]:
+  - @kontui/theme@0.1.1
+  - @kontui/accordion@0.1.2
+  - @kontui/alert@0.1.1
+  - @kontui/avatar@0.1.1
+  - @kontui/badge@0.1.1
+  - @kontui/box@0.1.1
+  - @kontui/breadcrumb@0.1.1
+  - @kontui/bullet@0.1.1
+  - @kontui/button@0.1.1
+  - @kontui/checkbox@0.1.1
+  - @kontui/code@0.1.1
+  - @kontui/dropdown@0.1.2
+  - @kontui/image@0.1.1
+  - @kontui/input@0.1.1
+  - @kontui/kbd@0.1.1
+  - @kontui/layout@0.1.2
+  - @kontui/link@0.1.1
+  - @kontui/loading@0.1.1
+  - @kontui/popover@0.1.1
+  - @kontui/rating@0.1.1
+  - @kontui/select@0.1.2
+  - @kontui/spinner@0.1.1
+  - @kontui/tag@0.1.1
+  - @kontui/text@0.1.1
+  - @kontui/textarea@0.1.1
+  - @kontui/tooltip@0.1.1
+
 ## 0.2.1
 
 ### Patch Changes

@@ -1,6 +1,6 @@
 {
   "name": "@kontui/dropdown",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "sideEffects": false,
   "license": "MIT",
   "main": "dist/cjs/index.js",
@@ -37,7 +37,7 @@
     "react": "18.0.2"
   },
   "dependencies": {
-    "@kontui/theme": "0.1.0",
+    "@kontui/theme": "0.1.1",
     "@kontui/utils": "^0.1.0",
     "styled-jsx": "^5.0.2"
   },
