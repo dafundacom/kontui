@@ -44,7 +44,7 @@ jobs:
             ${{ runner.os }}-pnpm-store-
 
       - name: Install dependencies
-        run: pnpm install --frozen-lockfile && pnpm bootstrap
+        run: pnpm install && pnpm bootstrap
 
       - name: Set node ${{ matrix.node-version }}
         uses: actions/setup-node@v3
