@@ -42,7 +42,7 @@ jobs:
             ${{ runner.os }}-pnpm-store-
 
       - name: Install dependencies
-        run: pnpm install --frozen-lockfile && pnpm bootstrap
+        run: pnpm install && pnpm bootstrap
 
       - name: Lint code
         run: pnpm lint
