@@ -10,11 +10,11 @@ interface Select
   extends React.ForwardRefExoticComponent<
     SelectProps & React.RefAttributes<HTMLDivElement>
   > {
-  Anchor: typeof SelectOption
+  Option: typeof SelectOption
 }
 
 const Select = InternalSelect as Select
-Select.Anchor = SelectOption
+Select.Option = SelectOption
 
 export type { SelectProps, SelectOptionProps }
 export { Select, SelectOption }
