@@ -1,6 +1,7 @@
 ---
 "@kontui/react": patch
+"@kontui/kbd": patch
 "@kontui/theme": patch
 ---
 
-add useMediaQuery hook
+add new hooks
