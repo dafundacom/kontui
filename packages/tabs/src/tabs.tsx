@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-expressions */
 import * as React from "react"
 import { Highlight } from "@kontui/layout"
 import { useTheme, useScale, withScale } from "@kontui/theme"
