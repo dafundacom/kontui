@@ -490,6 +490,19 @@ importers:
     devDependencies:
       react: 18.2.0
 
+  packages/tabs:
+    specifiers:
+      '@kontui/theme': 0.1.0
+      '@kontui/utils': ^0.1.0
+      react: 18.2.0
+      styled-jsx: ^5.0.2
+    dependencies:
+      '@kontui/theme': link:../theme
+      '@kontui/utils': link:../utils
+      styled-jsx: 5.0.2_react@18.2.0
+    devDependencies:
+      react: 18.2.0
+
   packages/tag:
     specifiers:
       '@kontui/theme': 0.1.0
