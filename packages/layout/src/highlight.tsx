@@ -1,7 +1,7 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import * as React from "react"
 import { useTheme } from "@kontui/theme"
-import { isUnplacedRect, useClasses, usePrevious } from "@kontui/utils"
+import { isUnplacedRect, useClasses, usePrevious, __DEV__ } from "@kontui/utils"
 
 import type { DefaultProps } from "@kontui/theme"
 import type { ReactiveDomReact } from "@kontui/utils"
