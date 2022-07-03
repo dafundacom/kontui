@@ -19,3 +19,4 @@ Input.Password = InputPassword
 
 export type { InputProps, InputPasswordProps }
 export { Input, InputPassword, getInputColors }
+export * from "./use-input"
