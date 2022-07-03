@@ -1,5 +1,13 @@
 # @kontui/theme
 
+## 0.1.2
+
+### Patch Changes
+
+- [#38](https://github.com/dafundacom/kontui/pull/38)
+  [`6eff6ba`](https://github.com/dafundacom/kontui/commit/6eff6ba200469dbb11a89e2c7f0a1837e0475021)
+  Thanks [@karyanayandi](https://github.com/karyanayandi)! - add new hooks
+
 ## 0.1.1
 
 ### Patch Changes
