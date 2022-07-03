@@ -1,13 +1,5 @@
 ## 03-07-2022
 
-**Kontui React** `v0.2.3`
+**Kontui Input** `v0.1.1`
 
-- add new hooks
-
-**Kontui Kbd** `v0.1.1`
-
-- add new hooks
-
-**Kontui Theme** `v0.1.2`
-
-- add new hooks
+- add useInput hook
