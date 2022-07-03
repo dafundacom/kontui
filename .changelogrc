@@ -1,6 +1,19 @@
-## 01-07-2022
+## 03-07-2022
 
-**Kontui React** `v0.2.0`
+**Kontui Layout** `v0.1.1`
 
-- add dropdown and select component
-- add select and dropdown component
+- update new component
+
+**Kontui Select** `v0.1.1`
+
+- update new component
+- fix select wrong export types
+
+**Kontui Tabs** `v0.1.1`
+
+- update new component
+- fix select wrong export types
+
+**Kontui Dropdown** `v0.1.1`
+
+- fix select wrong export types
