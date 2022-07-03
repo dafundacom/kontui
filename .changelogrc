@@ -1,6 +1,11 @@
-## 01-07-2022
+## 03-07-2022
 
-**Kontui React** `v0.2.0`
+**Kontui React** `v0.2.2`
 
-- add dropdown and select component
-- add select and dropdown component
+- add useMediaQuery hook
+- add useMediaQuery hook
+
+**Kontui Theme** `v0.1.1`
+
+- add useMediaQuery hook
+- add useMediaQuery hook
