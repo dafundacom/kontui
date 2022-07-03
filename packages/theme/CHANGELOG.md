@@ -1,5 +1,14 @@
 # @kontui/theme
 
+## 0.1.1
+
+### Patch Changes
+
+- [#33](https://github.com/dafundacom/kontui/pull/33)
+  [`de6c344`](https://github.com/dafundacom/kontui/commit/de6c3449384db9cae134acec0dce16c314702ca4)
+  Thanks [@karyanayandi](https://github.com/karyanayandi)! - add useMediaQuery
+  hook
+
 ## 0.1.0
 
 ### Minor Changes
