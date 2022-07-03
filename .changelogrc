@@ -1,11 +1,13 @@
 ## 03-07-2022
 
-**Kontui React** `v0.2.2`
+**Kontui React** `v0.2.3`
 
-- add useMediaQuery hook
-- add useMediaQuery hook
+- add new hooks
 
-**Kontui Theme** `v0.1.1`
+**Kontui Kbd** `v0.1.1`
 
-- add useMediaQuery hook
-- add useMediaQuery hook
+- add new hooks
+
+**Kontui Theme** `v0.1.2`
+
+- add new hooks
