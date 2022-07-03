@@ -8,6 +8,7 @@ import { Container } from "./container"
 import { Divider } from "./divider"
 import { Ellipsis } from "./ellipsis"
 import { Expand } from "./expand"
+import { Highlight } from "./highlight"
 import { Row } from "./row"
 import { Spacer } from "./spacer"
 
@@ -19,6 +20,7 @@ import type { ContainerProps } from "./container"
 import type { EllipsisProps } from "./ellipsis"
 import type { ExpandProps } from "./expand"
 import type { DividerProps } from "./divider"
+import type { HighlightProps } from "./highlight"
 import type { RowProps } from "./row"
 import type { SpacerProps } from "./spacer"
 
@@ -42,6 +44,7 @@ export type {
   DividerProps,
   EllipsisProps,
   ExpandProps,
+  HighlightProps,
   RowProps,
   SpacerProps,
 }
@@ -54,6 +57,7 @@ export {
   Divider,
   Ellipsis,
   Expand,
+  Highlight,
   Row,
   Spacer,
 }
