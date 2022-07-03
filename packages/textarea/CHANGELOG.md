@@ -1,5 +1,13 @@
 # @kontui/textarea
 
+## 0.1.1
+
+### Patch Changes
+
+- Updated dependencies
+  [[`39f8192`](https://github.com/dafundacom/kontui/commit/39f8192225785210e0c1936633e7bc5f192c4e76)]:
+  - @kontui/input@0.1.1
+
 ## 0.1.0
 
 ### Minor Changes

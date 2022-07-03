@@ -1,5 +1,13 @@
 # @kontui/input
 
+## 0.1.1
+
+### Patch Changes
+
+- [#48](https://github.com/dafundacom/kontui/pull/48)
+  [`39f8192`](https://github.com/dafundacom/kontui/commit/39f8192225785210e0c1936633e7bc5f192c4e76)
+  Thanks [@karyanayandi](https://github.com/karyanayandi)! - add useInput hook
+
 ## 0.1.0
 
 ### Minor Changes
