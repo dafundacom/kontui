@@ -1,5 +1,17 @@
 # @kontui/react
 
+## 0.2.1
+
+### Patch Changes
+
+- Updated dependencies
+  [[`da60dba`](https://github.com/dafundacom/kontui/commit/da60dba9537ef4c3523210067bf642abab4ac689),
+  [`6238149`](https://github.com/dafundacom/kontui/commit/6238149d3774c8950c748f0f7fea88401ae3d59d)]:
+  - @kontui/layout@0.1.1
+  - @kontui/select@0.1.1
+  - @kontui/dropdown@0.1.1
+  - @kontui/accordion@0.1.1
+
 ## 0.2.0
 
 ### Minor Changes

@@ -1,5 +1,13 @@
 # @kontui/accordion
 
+## 0.1.1
+
+### Patch Changes
+
+- Updated dependencies
+  [[`da60dba`](https://github.com/dafundacom/kontui/commit/da60dba9537ef4c3523210067bf642abab4ac689)]:
+  - @kontui/layout@0.1.1
+
 ## 0.1.0
 
 ### Minor Changes
