@@ -38,7 +38,7 @@
   },
   "dependencies": {
     "@kontui/input": "0.1.0",
-    "@kontui/theme": "0.1.0",
+    "@kontui/theme": "^0.1.0",
     "@kontui/utils": "^0.1.0",
     "styled-jsx": "^5.0.2"
   },
