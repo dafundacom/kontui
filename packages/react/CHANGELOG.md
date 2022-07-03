@@ -1,5 +1,24 @@
 # @kontui/react
 
+## 0.2.2
+
+### Patch Changes
+
+- [#33](https://github.com/dafundacom/kontui/pull/33)
+  [`de6c344`](https://github.com/dafundacom/kontui/commit/de6c3449384db9cae134acec0dce16c314702ca4)
+  Thanks [@karyanayandi](https://github.com/karyanayandi)! - add useMediaQuery
+  hook
+
+* [#38](https://github.com/dafundacom/kontui/pull/38)
+  [`6eff6ba`](https://github.com/dafundacom/kontui/commit/6eff6ba200469dbb11a89e2c7f0a1837e0475021)
+  Thanks [@karyanayandi](https://github.com/karyanayandi)! - add useMediaQuery
+  hook
+
+* Updated dependencies
+  [[`de6c344`](https://github.com/dafundacom/kontui/commit/de6c3449384db9cae134acec0dce16c314702ca4),
+  [`6eff6ba`](https://github.com/dafundacom/kontui/commit/6eff6ba200469dbb11a89e2c7f0a1837e0475021)]:
+  - @kontui/theme@0.1.1
+
 ## 0.2.1
 
 ### Patch Changes
