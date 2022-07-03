@@ -319,7 +319,7 @@ importers:
 
   packages/kbd:
     specifiers:
-      '@kontui/theme': ^0.1.0
+      '@kontui/theme': ^0.1.2
       '@kontui/utils': ^0.1.0
       react: 18.2.0
       styled-jsx: ^5.0.2
@@ -412,7 +412,7 @@ importers:
       '@kontui/dropdown': ^0.1.1
       '@kontui/image': ^0.1.0
       '@kontui/input': ^0.1.0
-      '@kontui/kbd': ^0.1.0
+      '@kontui/kbd': ^0.1.1
       '@kontui/layout': ^0.1.1
       '@kontui/link': ^0.1.0
       '@kontui/loading': ^0.1.0
@@ -423,7 +423,7 @@ importers:
       '@kontui/tag': ^0.1.0
       '@kontui/text': ^0.1.0
       '@kontui/textarea': ^0.1.0
-      '@kontui/theme': ^0.1.0
+      '@kontui/theme': ^0.1.2
       '@kontui/tooltip': ^0.1.0
       '@kontui/utils': ^0.1.0
       react: 18.2.0
