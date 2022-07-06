@@ -21,3 +21,5 @@ const Tab = TabsItem
 
 export type { TabsProps, TabsItemProps }
 export { Tab, Tabs, TabsItem }
+
+export * from "./use-tabs"
