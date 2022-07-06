@@ -84,7 +84,6 @@ const Dropdown: React.FunctionComponent<DropdownProps> = React.memo((props) => {
   React.useEffect(() => {
     if (!parent || !parent.current) return
     parent.current.addEventListener("mouseenter", updateRect)
-    /* istanbul ignore next */
     return () => {
       if (!parent || !parent.current) return
       parent.current.removeEventListener("mouseenter", updateRect)
