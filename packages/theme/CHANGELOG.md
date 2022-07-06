@@ -1,5 +1,14 @@
 # @kontui/theme
 
+## 0.1.3
+
+### Patch Changes
+
+- [#53](https://github.com/dafundacom/kontui/pull/53)
+  [`19a9c97`](https://github.com/dafundacom/kontui/commit/19a9c979f80fdc80cafbf98997c41aa721fc1f1a)
+  Thanks [@karyanayandi](https://github.com/karyanayandi)! - fix: useMediaQuery
+  not exported
+
 ## 0.1.2
 
 ### Patch Changes

@@ -1,5 +1,18 @@
 # @kontui/tabs
 
+## 0.1.2
+
+### Patch Changes
+
+- [#55](https://github.com/dafundacom/kontui/pull/55)
+  [`738c4ce`](https://github.com/dafundacom/kontui/commit/738c4ce242f538ee72f498f19f50525cbd0ad910)
+  Thanks [@karyanayandi](https://github.com/karyanayandi)! - feat: add useTabs
+  hook
+
+- Updated dependencies
+  [[`19a9c97`](https://github.com/dafundacom/kontui/commit/19a9c979f80fdc80cafbf98997c41aa721fc1f1a)]:
+  - @kontui/theme@0.1.3
+
 ## 0.1.1
 
 ### Patch Changes
