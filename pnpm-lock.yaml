@@ -369,6 +369,25 @@ importers:
     devDependencies:
       react: 18.2.0
 
+  packages/modal:
+    specifiers:
+      '@kontui/button': ^0.1.0
+      '@kontui/kbd': ^0.1.0
+      '@kontui/layout': ^0.1.0
+      '@kontui/theme': ^0.1.0
+      '@kontui/utils': ^0.1.0
+      react: 18.2.0
+      styled-jsx: ^5.0.2
+    dependencies:
+      '@kontui/button': link:../button
+      '@kontui/kbd': link:../kbd
+      '@kontui/layout': link:../layout
+      '@kontui/theme': link:../theme
+      '@kontui/utils': link:../utils
+      styled-jsx: 5.0.2_react@18.2.0
+    devDependencies:
+      react: 18.2.0
+
   packages/popover:
     specifiers:
       '@kontui/theme': ^0.1.0
@@ -15561,6 +15580,7 @@ packages:
         optional: true
     dependencies:
       react: 18.2.0
+    dev: false
 
   /supports-color/5.5.0:
     resolution: {integrity: sha512-QjVjwdXIt408MIiAqCX4oUKsgU2EqAGzs2Ppkm4aQYbjm+ZEWEcW4SfFNTr4uMNZma0ey4f5lgLrkB0aX0QMow==}

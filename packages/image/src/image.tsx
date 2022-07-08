@@ -16,6 +16,7 @@ interface ImageProps
   disableSkeleton?: boolean
   className?: string
   maxDelay?: number
+  alt?: string
 }
 
 const ImageBase: React.FunctionComponent<ImageProps> = (props) => {
@@ -24,6 +25,7 @@ const ImageBase: React.FunctionComponent<ImageProps> = (props) => {
     disableSkeleton = false,
     className,
     maxDelay = 3000,
+    alt,
     ...rest
   } = props
 
@@ -68,7 +70,13 @@ const ImageBase: React.FunctionComponent<ImageProps> = (props) => {
         {showSkeleton && showAnimation && (
           <ImageSkeleton opacity={loading ? 0.5 : 0} />
         )}
-        <img ref={imageRef} onLoad={imageLoaded} src={url} {...rest} />
+        <img
+          ref={imageRef}
+          onLoad={imageLoaded}
+          src={url}
+          alt={alt}
+          {...rest}
+        />
       </div>
       <style jsx>{`
         .image {
